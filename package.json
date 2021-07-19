@@ -1,0 +1,30 @@
+{
+  "name": "html-and-css-workshop",
+  "version": "1.0.0",
+  "description": "Este um projeto para estudo e aprendizado de tailwind 2.",
+  "main": "index.html",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./css/styles.css -o ./styles.css --watch",
+    "dev": "cross-env NODE_ENV=development npx tailwindcss -i ./css/styles.css -o ./styles.css",
+    "prod": "cross-env NODE_ENV=production npx tailwindcss -i ./css/styles.css -o ./styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe-balloni/HTML-and-CSS-Workshop.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felipe-balloni/HTML-and-CSS-Workshop/issues"
+  },
+  "homepage": "https://github.com/felipe-balloni/HTML-and-CSS-Workshop#readme"
+}
