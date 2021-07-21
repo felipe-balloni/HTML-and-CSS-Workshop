@@ -15,7 +15,7 @@
   "scripts": {
     "watch": "npx tailwindcss -i ./css/styles.css -o ./styles.css --watch",
     "dev": "cross-env NODE_ENV=development npx tailwindcss -i ./css/styles.css -o ./styles.css",
-    "prod": "cross-env NODE_ENV=production npx tailwindcss -i ./css/styles.css -o ./styles.css",
+    "prod": "cross-env NODE_ENV=production npx tailwindcss -i ./css/styles.css -o ./styles.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
