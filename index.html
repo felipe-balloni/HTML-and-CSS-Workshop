@@ -7,31 +7,117 @@
 
 </head>
 <body>
-<section class="px-6 py-6 text-opacity-60">
-    
+
+<section class="px-6 py-8">
+
     <nav class="flex justify-between itens-center">
         <div>
-            <a href="#">
-                <img src="./images/logo.svg" alt="Lacarasts Logo" width="165" height="16">
+            <a href="/">
+                <img alt="Lacarasts Logo" height="16" src="./images/logo.svg" width="165">
             </a>
         </div>
         <div class="">
-            <a href="#">Home Page</a>
-            <a href="#">Subscribe for Updates</a>
+            <a class="text-xs font-bold uppercase" href="/">Home Page</a>
+            <a class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5" href="#">Subscribe
+                for Updates</a>
         </div>
     </nav>
-    
-    <header>
-        
+
+    <header class="max-w-4xl mx-auto mt-20 text-center">
+        <div class="max-w-xl mx-auto">
+            <h1 class="text-4xl">
+                Latest <span class="text-blue-500">Laravel From Scratch</span> News
+            </h1>
+            <h2 class="inline-flex mt-2">By Lary Laracore <img alt="Head of Lary mascot" src="./images/lary-head.svg">
+            </h2>
+            <p class="text-sm mt-14">
+                Another year. Another update. We're refreshing the popular Laravel series with new content.
+                I'm going to keep you guys to speed with what's going on!
+            </p>
+        </div>
+        <div class="flex justify-center space-x-6 mt-8">
+            <div>
+                <label class="hidden" for="category">Category</label>
+                <select class="py-3
+                rounded-xl bg-gray-100 text-sm font-semibold" id="category" name="Category">
+                    <option disabled selected value="">Category</option>
+                    <option value="personal">Personal</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+            <div>
+                <label class="hidden" for="otherFilters">Other Filters</label>
+                <select class="py-3
+                rounded-xl bg-gray-100 text-sm font-semibold" id="otherFilters" name="otherFilters">
+                    <option disabled selected value="">Other Filters</option>
+                    <option value="foo">Foo</option>
+                    <option value="bar">Bar</option>
+                </select></div>
+            <div>
+                <label class="hidden" for="search">Search</label>
+                <input class="py-3
+                rounded-xl bg-gray-100 text-sm font-semibold placeholder-black" id="search" name="search" placeholder="Find something" type="text">
+            </div>
+        </div>
     </header>
-    
-    <main>
-        
+
+    <main class="max-w-6xl mx-auto mt-20">
+        <article class="bg-gray-100 rounded-xl">
+            <div class="py-6 px-5 flex">
+                <div class="flex-1 mr-8">
+                    <img alt="Blog Post illustration" class="rounded-xl" src="./images/illustration-1.png">
+                </div>
+
+                <div class="flex-1 flex flex-col justify-between">
+                    <header>
+                        <div class="space-x-2">
+                            <a class="px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase font-semibold"
+                               href="#">Techniques</a>
+                            <a class="px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase font-semibold"
+                               href="#">Updates</a>
+                        </div>
+
+                        <div class="mt-4">
+                            <h1 class="text-3xl">This is a big title and it will look great on two or even three lines.
+                                Wooohoo!</h1>
+                            <span class="mt-2 block text-gray-400 text-xs">
+                                Published <time>1 day ago</time>
+                            </span>
+                            <p></p>
+                        </div>
+                    </header>
+                    <div class="text-sm mt-2">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi fugiat illum in magni
+                            neque nisi porro quisquam quo soluta voluptatibus.
+                        </p>
+
+                        <p class="mt-4">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                        </p>
+                    </div>
+                    <footer class="flex justify-between items-center mt-8">
+                        <div class="flex items-center text-sm">
+                            <img alt="Lary avatar" src="./images/lary-avatar.svg">
+                            <div class="ml-3">
+                                <h5 class="font-bold">Lary Laracore</h5>
+                                <h6>Mascot at Laracasts</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="text-sm font-semibold bg-gray-200 rounded-full px-8 py-2 " href="#">Read More</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </article>
     </main>
-    
+
     <footer>
-        
+
     </footer>
+
 </section>
 
 </body>

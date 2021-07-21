@@ -4,6 +4,7 @@
   "description": "Este um projeto para estudo e aprendizado de tailwind 2.",
   "main": "index.html",
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
